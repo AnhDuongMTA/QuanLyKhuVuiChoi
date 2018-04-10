@@ -1,0 +1,5 @@
+C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\Entity\bin\Debug\Entity.dll
+C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\Entity\bin\Debug\Entity.pdb
+C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\Entity\obj\Debug\Entity.dll
+C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\Entity\obj\Debug\Entity.pdb
