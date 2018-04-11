@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KetNoi.cs" />
+    <Compile Include="KhachHangDAL.cs" />
     <Compile Include="KhuVucDAL.cs" />
     <Compile Include="NguoiDungDAL.cs" />
     <Compile Include="NhanVienDAL.cs" />

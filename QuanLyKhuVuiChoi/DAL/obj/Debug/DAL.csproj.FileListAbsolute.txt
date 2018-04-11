@@ -12,3 +12,10 @@ E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debu
 E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debug\DAL.pdb
 E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debug\Entity.dll
 E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debug\Entity.pdb
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debug\Entity.dll
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\bin\Debug\Entity.pdb
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\obj\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\DAL\obj\Debug\DAL.pdb
