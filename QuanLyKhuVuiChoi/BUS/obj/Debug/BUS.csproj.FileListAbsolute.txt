@@ -7,3 +7,12 @@ C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\bin\Debug\Entity.pd
 C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\obj\Debug\BUS.dll
 C:\Users\ADMIN\Desktop\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\obj\Debug\BUS.pdb
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\bin\Debug\BUS.dll
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\bin\Debug\BUS.pdb
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\bin\Debug\DAL.dll
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\bin\Debug\Entity.dll
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\bin\Debug\DAL.pdb
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\bin\Debug\Entity.pdb
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\obj\Debug\BUS.dll
+E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\BUS\obj\Debug\BUS.pdb
