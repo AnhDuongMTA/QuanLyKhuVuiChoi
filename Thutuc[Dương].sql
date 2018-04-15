@@ -117,3 +117,40 @@ END
  	DELETE dbo.KhachHang
 	WHERE Ma_KH=@MaKhachHang
  END
+ GO 
+ --Thu tuc xem dich vu
+ CREATE PROC SP_XemDichVu
+ AS
+ BEGIN
+ 	SELECT * FROM dbo.DichVu
+ END
+ GO
+ --thu tuc them dich vu
+ CREATE PROC SP_ThemDichVu(@MaDV VARCHAR(10), @TenDV NVARCHAR(50), @GiaDV INT, @MaKhu VARCHAR(10))
+ AS
+ BEGIN
+ 	INSERT dbo.DichVu
+ 	VALUES  ( @MaDV,@TenDV,@GiaDV,@MaKhu)
+ END
+ GO 
+ --thu tuc sua dich vu
+ CREATE PROC SP_SuaDichVu(@MaDV VARCHAR(10), @TenDV NVARCHAR(50), @GiaDV INT, @MaKhu VARCHAR(10))
+ AS
+ BEGIN
+	UPDATE dbo.ChiTietPhieuMua
+	SET Ma_DV=NULL
+	WHERE Ma_DV=@MaDV
+ 	UPDATE dbo.DichVu 
+	SET Ten_DV=@TenDV,Gia_DV=@GiaDV,Ma_Khu=@MaKhu
+	WHERE Ma_DV=@MaDV
+ END
+ GO 
+ --thu tuc xoa dich vu
+ CREATE PROC SP_XoaDichVu(@MaDV VARCHAR(10))
+ AS
+ BEGIN
+	DELETE dbo.ChiTietPhieuMua
+	WHERE Ma_DV=@MaDV
+ 	DELETE dbo.DichVu
+	WHERE Ma_DV=@MaDV
+ END

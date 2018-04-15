@@ -134,10 +134,6 @@ namespace QuanLyKhuVuiChoi
                 {
                     MessageBox.Show("không được thêm nhân viên  dưới 18 tuổi!");
                 }
-
-
-
-
                 HienThi();
                 clearData();
                 DisEnl(false);

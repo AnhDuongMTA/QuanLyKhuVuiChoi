@@ -61,3 +61,4 @@ C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVui
 C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmVeChoi.resources
 C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.Properties.Resources.resources
 C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\khuvuichoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmDichVu.resources
