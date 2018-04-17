@@ -17,10 +17,6 @@ namespace BUS
         {
             return Dal.GetData();
         }
-        public DataTable GetDataByID(string ID)
-        {
-            return Dal.GetDataByID(ID);
-        }
         public int InsertData(TroChoiEntity Tc)
         {
             return Dal.InsertData(Tc);
@@ -36,6 +32,14 @@ namespace BUS
         public string TangMa()
         {
             return Dal.TangMa();
+        }
+        public DataTable GetDataTTTB(string ID)
+        {
+            return Dal.GetDataTTTB(ID);
+        }
+        public DataTable GetListKhuVuc()
+        {
+            return Dal.GetListKhuVuc();
         }
     }
 }

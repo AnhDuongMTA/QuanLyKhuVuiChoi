@@ -100,6 +100,30 @@
     <Compile Include="frmTroChoi.Designer.cs">
       <DependentUpon>frmTroChoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTTDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTDV.Designer.cs">
+      <DependentUpon>frmTTDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTTNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTNV.Designer.cs">
+      <DependentUpon>frmTTNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTTTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTTB.Designer.cs">
+      <DependentUpon>frmTTTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTTTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTTC.Designer.cs">
+      <DependentUpon>frmTTTC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVeChoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +158,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTroChoi.resx">
       <DependentUpon>frmTroChoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTDV.resx">
+      <DependentUpon>frmTTDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTNV.resx">
+      <DependentUpon>frmTTNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTTB.resx">
+      <DependentUpon>frmTTTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTTC.resx">
+      <DependentUpon>frmTTTC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVeChoi.resx">
       <DependentUpon>frmVeChoi.cs</DependentUpon>

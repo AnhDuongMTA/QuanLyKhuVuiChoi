@@ -21,10 +21,11 @@ BEGIN
 	DELETE dbo.ThietBi WHERE Ma_TB = @Ma
 END
 GO
-CREATE PROC ThietBi_SelectAll
+ALTER PROC ThietBi_SelectAll
 AS
 BEGIN
-	SELECT * FROM dbo.ThietBi
+	SELECT Ma_TB,Ten_TB,Ngay_BD,Ten_TroChoi FROM dbo.ThietBi,dbo.TroChoi
+	WHERE ThietBi.Ma_TroChoi =TroChoi.Ma_TroChoi
 END
 GO 
 CREATE PROC Them_TroChoi (@MaTC VARCHAR(10),@TenTC NVARCHAR(30),@MaKhu VARCHAR(10))
@@ -54,16 +55,19 @@ AS
 BEGIN
 	SELECT * FROM dbo.TroChoi
 END
+GO
 CREATE PROC KhuVuc_SelectAll
 AS
 BEGIN
 	SELECT * FROM dbo.KhuVuc
 END
+GO 
 CREATE PROC VeChoi_SelectAll
 AS
 BEGIN
 	SELECT * FROM dbo.VeChoi
 END
+GO 
 CREATE PROC Them_VeChoi (@MaVe varchar(10),@MaKH VARCHAR(10),@TongTien int ,@MaKhu VARCHAR(10),@SoVeNL INT,@SoVeTE INT,@NgayBan DATE) 
 AS
 BEGIN
@@ -78,15 +82,22 @@ BEGIN
 	        )
 	VALUES  (@MaVe,@SoVeNL,@SoVeTE,@NgayBan,@TongTien,@MaKH,@MaKhu)
 END
+GO 
 CREATE PROC Sua_VeChoi (@MaVe varchar(10),@MaKH VARCHAR(10),@TongTien int ,@MaKhu VARCHAR(10),@SoVeNL INT,@SoVeTE INT,@NgayBan DATE) 
 AS
 BEGIN
 	UPDATE dbo.VeChoi SET So_VeNL = @SoVeNL,So_VeTE = @SoVeTE ,Ngay_Ban = @NgayBan,Tong_Tien = @TongTien ,Ma_KH = @MaKH,Ma_Khu = @MaKHu
 	WHERE Ma_Ve = @MaVe
 END
+go
 CREATE PROC Xoa_VeChoi(@Ma varchar(10))
 AS
 BEGIN
 	DELETE dbo.VeChoi 
 	WHERE Ma_Ve = @Ma
+END
+CREATE PROC TroChoi_Select
+AS 
+BEGIN
+	SELECT * FROM dbo.TroChoi
 END

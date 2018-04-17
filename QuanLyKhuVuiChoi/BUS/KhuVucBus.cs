@@ -17,10 +17,6 @@ namespace BUS
         {
             return da.GetData();
         }
-        public DataTable GetDataByID(string ID)
-        {
-            return da.GetDataByID(ID);
-        }
         public int InsertData(KhuVucEntity Kh)
         {
             return da.InsertData(Kh);
@@ -36,6 +32,18 @@ namespace BUS
         public string TangMa()
         {
             return da.TangMa();
+        }
+        public DataTable GetDataTTTC(string ID)
+        {
+            return da.GetDataTTTC(ID);
+        }
+        public DataTable GetDataTTDV(string ID)
+        {
+            return da.GetDataTTDV(ID);
+        }
+        public DataTable GetDataTTNV(string ID)
+        {
+            return da.GetDataTTNV(ID);
         }
     }
 }

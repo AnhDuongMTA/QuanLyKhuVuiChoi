@@ -16,10 +16,9 @@ namespace DAL
         {
             return conn.GetData("ThietBi_SelectAll", null);
         }
-        public DataTable GetDataByID(String ID)
+        public DataTable GetListTroChoi()
         {
-            SqlParameter[] para = { new SqlParameter("MaTB", ID) };
-            return conn.GetData("ThietBi_SelectID", para);
+            return conn.GetData("TroChoi_Select", null);
         }
         public int InsertData(ThietBiEntity Tb)
         {

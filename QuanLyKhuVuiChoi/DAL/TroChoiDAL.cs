@@ -16,11 +16,6 @@ namespace DAL
         {
             return conn.GetData("TroChoi_SelectAll", null);
         }
-        public DataTable GetDataByID(String ID)
-        {
-            SqlParameter[] para = { new SqlParameter("MaTC", ID) };
-            return conn.GetData("TroChoi_SelectID", para);
-        }
         public int InsertData(TroChoiEntity Tc)
         {
             SqlParameter[] para =
@@ -53,6 +48,16 @@ namespace DAL
         public string TangMa()
         {
             return conn.TangMa("Select * From TroChoi ", "TC");
+        }
+
+        public DataTable GetListKhuVuc()
+        {
+            return conn.GetData("KhuVuc_Select", null);
+        }
+        public DataTable GetDataTTTB(String ID)
+        {
+            SqlParameter[] para = { new SqlParameter("Ma", ID) };
+            return conn.GetData("TroChoi_SelectTB", para);
         }
     }
 }

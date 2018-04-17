@@ -15,10 +15,20 @@ namespace DAL
         {
             return conn.GetData("KhuVuc_SelectAll", null);
         }
-        public DataTable GetDataByID(String ID)
+        public DataTable GetDataTTNV(String ID)
         {
-            SqlParameter[] para = { new SqlParameter("MaKhu", ID) };
-            return conn.GetData("KhuVuc_SelectID", para);
+            SqlParameter[] para = { new SqlParameter("Ma", ID) };
+            return conn.GetData("KhuVuc_SelectNV", para);
+        }
+        public DataTable GetDataTTTC(String ID)
+        {
+            SqlParameter[] para = { new SqlParameter("Ma", ID) };
+            return conn.GetData("KhuVuc_SelectTC", para);
+        }
+        public DataTable GetDataTTDV(String ID)
+        {
+            SqlParameter[] para = { new SqlParameter("Ma", ID) };
+            return conn.GetData("KhuVuc_SelectDV", para);
         }
         public int InsertData(KhuVucEntity Kh)
         {

@@ -16,6 +16,7 @@ namespace QuanLyKhuVuiChoi
         KhuVucBus Bus = new KhuVucBus();
         KhuVucEntity Kh = new KhuVucEntity();
         private int fluu = 1;
+        public static string Ma;
         public frmKhuVuc()
         {
             InitializeComponent();
@@ -188,6 +189,39 @@ namespace QuanLyKhuVuiChoi
             }
             else
                 HienThi();
+       
+        }
+
+        private void btnTTNV_Click(object sender, EventArgs e)
+        {
+            if (txtMaKhu != null)
+            {
+                Ma = txtMaKhu.Text;
+                frmTTNV frmNv = new frmTTNV();
+                frmNv.Show();
+            }
+
+        }
+
+        private void btnTTDV_Click(object sender, EventArgs e)
+        {
+            if (txtMaKhu != null)
+            {
+                Ma = txtMaKhu.Text;
+                frmTTDV frmDv = new frmTTDV();
+                frmDv.Show();
+            }
+
+        }
+
+        private void btnTTTC_Click(object sender, EventArgs e)
+        {
+            if (txtMaKhu != null)
+            {
+                Ma = txtMaKhu.Text;
+                frmTTTC frmTc = new frmTTTC();
+                frmTc.Show();
+            }
         }
     }
 }

@@ -40,6 +40,14 @@ namespace QuanLyKhuVuiChoi
             dpNgayBD.Text = "";
             cmbMaTC.Text = "";
         }
+        public void ShowTroChoi()
+        {
+            DataTable dt = new DataTable();
+            dt = Bus.GetListTroChoi();
+            cmbMaTC.DataSource = dt;
+            cmbMaTC.DisplayMember = "Ten_TroChoi";
+            cmbMaTC.ValueMember = "Ma_TroChoi";
+        }
         private void HienThi()
         {
             dgvThietBi.DataSource = Bus.GetData();
@@ -48,6 +56,7 @@ namespace QuanLyKhuVuiChoi
         {
             HienThi();
             DisEnl(false);
+            ShowTroChoi();
         }
 
         private void dgvThietBi_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -59,14 +68,14 @@ namespace QuanLyKhuVuiChoi
                     //  txtMaTB.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["MaTB"].Value);
                     txtTenTB.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["TenTB"].Value);
                     dpNgayBD.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["NgayBD"].Value);
-                    cmbMaTC.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["MaTC"].Value);
+                    cmbMaTC.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["TenTC"].Value);
                 }
                 else
                 {
                     txtMaTB.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["MaTB"].Value);
                     txtTenTB.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["TenTB"].Value);
                     dpNgayBD.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["NgayBD"].Value);
-                    cmbMaTC.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["MaTC"].Value);
+                    cmbMaTC.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["TenTC"].Value);
                 }
             }
         }

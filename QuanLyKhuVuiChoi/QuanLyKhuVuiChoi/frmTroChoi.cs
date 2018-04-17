@@ -16,6 +16,7 @@ namespace QuanLyKhuVuiChoi
     {
         TrochoiBus Bus = new TrochoiBus();
         TroChoiEntity Tc = new TroChoiEntity();
+        public static string Ma;
         private int fluu = 1;
         public frmTroChoi()
         {
@@ -38,6 +39,14 @@ namespace QuanLyKhuVuiChoi
             txtMa.Text = "";
             cmbMaKhu.Text = "";
         }
+        public void ShowKhuVuc()
+        {
+            DataTable dt = new DataTable();
+            dt = Bus.GetListKhuVuc();
+            cmbMaKhu.DataSource = dt;
+            cmbMaKhu.DisplayMember = "Ten_Khu";
+            cmbMaKhu.ValueMember = "Ma_Khu";
+        }
         private void HienThi()
         {
             dgvTroChoi.DataSource = Bus.GetData();
@@ -46,6 +55,7 @@ namespace QuanLyKhuVuiChoi
         {
             HienThi();
             DisEnl(false);
+            ShowKhuVuc();
         }
         private void dgvTroChoi_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -56,13 +66,13 @@ namespace QuanLyKhuVuiChoi
                     //  txtMaTB.Text = Convert.ToString(dgvThietBi.CurrentRow.Cells["MaTB"].Value);
                     //txtMa.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["MaTC"].Value);
                     txtTen.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["TenTC"].Value);
-                    cmbMaKhu.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["MaKhu"].Value);
+                    cmbMaKhu.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["TenKhu"].Value);
                 }
                 else
                 {
                     txtMa.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["MaTC"].Value);
                     txtTen.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["TenTC"].Value);
-                    cmbMaKhu.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["MaKhu"].Value);
+                    cmbMaKhu.Text = Convert.ToString(dgvTroChoi.CurrentRow.Cells["TenKhu"].Value);
                 }
             }
         }
@@ -168,6 +178,17 @@ namespace QuanLyKhuVuiChoi
             }
             else
                 HienThi();
+        }
+
+        private void btnTTTB_Click(object sender, EventArgs e)
+        {
+            if (txtMa != null)
+            {
+                Ma = txtMa.Text;
+                frmTTTB frmTb = new frmTTTB();
+                frmTb.Show();
+            }
+
         }
     }
 }

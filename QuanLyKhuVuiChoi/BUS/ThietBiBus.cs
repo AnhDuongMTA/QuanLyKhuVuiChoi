@@ -17,9 +17,9 @@ namespace BUS
         {
             return da.GetData();
         }
-        public DataTable GetDataByID(string ID)
+        public DataTable GetListTroChoi()
         {
-            return da.GetDataByID(ID);
+            return da.GetListTroChoi();
         }
         public int InsertData(ThietBiEntity Tb)
         {
