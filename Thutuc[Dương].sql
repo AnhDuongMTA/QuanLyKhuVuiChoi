@@ -1,4 +1,4 @@
-﻿USE QUAN_LY_KHU_VUI_CHOI
+﻿USE QuanLyKhuVuiChoi
 GO
 CREATE TABLE NguoiDung
 (

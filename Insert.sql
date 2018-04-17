@@ -1,4 +1,4 @@
-﻿
+﻿USE QuanLyKhuVuiChoi
 ------INSERT-----
 -- Khu vực
 INSERT dbo.KhuVuc( Ma_Khu,Ten_Khu,Ma_TruongKhu,Chuc_Nang,Vi_Tri,Gia_NL,Gia_TE )
