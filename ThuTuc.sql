@@ -96,7 +96,7 @@ BEGIN
 	DELETE dbo.VeChoi 
 	WHERE Ma_Ve = @Ma
 END
-CREATE PROC TroChoi_Select
+CREATE PROC TroChoi_SelectAll
 AS 
 BEGIN
 	SELECT * FROM dbo.TroChoi
