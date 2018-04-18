@@ -1,6 +1,6 @@
-USE QuanLyKhuVuiChoi
+﻿USE QuanLyKhuVuiChoi
 GO
-
+--Dịch Vụ--
 CREATE PROC XemDV
 AS
 BEGIN
@@ -32,3 +32,35 @@ BEGIN
 	DELETE dbo.DichVu WHERE Ma_DV=@madv
 END
 
+--Phiếu Mua--
+GO
+
+ALTER PROC XemPM
+AS
+BEGIN
+	SELECT * FROM PhieuMua
+END
+
+GO
+ALTER PROC ThemPM(@maphieu VARCHAR(10),@ngaymua DATE,@makh VARCHAR(10))
+AS
+BEGIN
+	INSERT PhieuMua(Ma_Phieu,Ngay_Mua,Ma_KH)
+	VALUES (@maphieu,@ngaymua,@makh)
+END
+
+GO
+ALTER PROC SuaPM(@maphieu VARCHAR(10),@ngaymua DATE,@makh VARCHAR(10))
+AS
+BEGIN
+	UPDATE PhieuMua SET Ngay_Mua=@ngaymua,Ma_KH=@makh
+	WHERE Ma_Phieu=@maphieu
+END
+
+GO
+ALTER PROC XoaPM(@maphieu VARCHAR(10))
+AS
+BEGIN
+	DELETE PhieuMua
+	WHERE Ma_Phieu=@maphieu
+END

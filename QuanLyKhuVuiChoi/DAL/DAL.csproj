@@ -46,6 +46,7 @@
     <Compile Include="KhuVucDAL.cs" />
     <Compile Include="NguoiDungDAL.cs" />
     <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="PhieuMuaDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThietBiDAL.cs" />
     <Compile Include="TroChoiDAL.cs" />

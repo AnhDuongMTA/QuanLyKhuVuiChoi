@@ -92,3 +92,8 @@ E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVui
 E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmTTNV.resources
 E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmTTTB.resources
 E:\Kỳ 6\Thực tập CSDL\QLKVC\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmTTTC.resources
+D:\GitHub\QLNS\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmPhieuMua.resources
+D:\GitHub\QLNS\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmTTDV.resources
+D:\GitHub\QLNS\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmTTNV.resources
+D:\GitHub\QLNS\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmTTTB.resources
+D:\GitHub\QLNS\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\QuanLyKhuVuiChoi\obj\Debug\QuanLyKhuVuiChoi.frmTTTC.resources
