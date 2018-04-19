@@ -14,7 +14,7 @@ namespace DAL
         KetNoi conn = new KetNoi();
         public DataTable XemDichVu()
         {
-            return conn.GetData("XemDV", null);
+            return conn.GetData("SP_XemDichVu", null);
         }
         public DataTable TimKiemDichVu(string str)
         {

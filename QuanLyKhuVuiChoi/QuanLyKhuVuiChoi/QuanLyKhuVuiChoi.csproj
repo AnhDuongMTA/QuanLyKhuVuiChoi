@@ -88,11 +88,11 @@
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPhieuMua.cs">
+    <Compile Include="frmPhieuMuaDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPhieuMua.Designer.cs">
-      <DependentUpon>frmPhieuMua.cs</DependentUpon>
+    <Compile Include="frmPhieuMuaDichVu.Designer.cs">
+      <DependentUpon>frmPhieuMuaDichVu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThietbi.cs">
       <SubType>Form</SubType>
@@ -159,8 +159,8 @@
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPhieuMua.resx">
-      <DependentUpon>frmPhieuMua.cs</DependentUpon>
+    <EmbeddedResource Include="frmPhieuMuaDichVu.resx">
+      <DependentUpon>frmPhieuMuaDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThietbi.resx">
       <DependentUpon>frmThietbi.cs</DependentUpon>
