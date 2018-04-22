@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ChiTietPhieuMuaBUS.cs" />
     <Compile Include="DichVuBUS.cs" />
+    <Compile Include="HomeBUS.cs" />
     <Compile Include="KhachHangBUS.cs" />
     <Compile Include="KhuVucBus.cs" />
     <Compile Include="NguoiDungBUS.cs" />

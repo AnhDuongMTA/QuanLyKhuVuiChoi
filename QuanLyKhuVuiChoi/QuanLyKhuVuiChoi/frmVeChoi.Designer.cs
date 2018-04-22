@@ -33,6 +33,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cmbMaKH = new System.Windows.Forms.ComboBox();
             this.cmbMaKhu = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,7 +68,6 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.cmbMaKH = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVeChoi)).BeginInit();
@@ -126,6 +126,14 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 19);
             this.label6.TabIndex = 0;
+            // 
+            // cmbMaKH
+            // 
+            this.cmbMaKH.FormattingEnabled = true;
+            this.cmbMaKH.Location = new System.Drawing.Point(113, 319);
+            this.cmbMaKH.Name = "cmbMaKH";
+            this.cmbMaKH.Size = new System.Drawing.Size(159, 27);
+            this.cmbMaKH.TabIndex = 2;
             // 
             // cmbMaKhu
             // 
@@ -487,14 +495,6 @@
             this.label11.TabIndex = 56;
             this.label11.Text = "Tìm Kiếm :";
             // 
-            // cmbMaKH
-            // 
-            this.cmbMaKH.FormattingEnabled = true;
-            this.cmbMaKH.Location = new System.Drawing.Point(113, 319);
-            this.cmbMaKH.Name = "cmbMaKH";
-            this.cmbMaKH.Size = new System.Drawing.Size(159, 27);
-            this.cmbMaKH.TabIndex = 2;
-            // 
             // frmVeChoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
@@ -514,6 +514,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVeChoi";
             this.Text = "frmVeChoi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmVeChoi_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

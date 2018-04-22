@@ -599,6 +599,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmKhuVuc";
             this.Text = "frmKhuVuc";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmKhuVuc_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

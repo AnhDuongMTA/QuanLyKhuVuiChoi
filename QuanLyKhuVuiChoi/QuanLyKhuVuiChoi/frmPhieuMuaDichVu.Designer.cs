@@ -67,10 +67,10 @@
             this.groupBox1.Controls.Add(this.lbMaPhieu);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(873, 218);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(875, 218);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Phiếu Mua";
@@ -79,9 +79,9 @@
             // 
             this.cbMaKH.FormattingEnabled = true;
             this.cbMaKH.Location = new System.Drawing.Point(229, 104);
-            this.cbMaKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMaKH.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaKH.Name = "cbMaKH";
-            this.cbMaKH.Size = new System.Drawing.Size(213, 28);
+            this.cbMaKH.Size = new System.Drawing.Size(213, 24);
             this.cbMaKH.TabIndex = 9;
             // 
             // dtpNgayMua
@@ -89,9 +89,9 @@
             this.dtpNgayMua.CustomFormat = "yyyy/MM/dd";
             this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayMua.Location = new System.Drawing.Point(702, 51);
-            this.dtpNgayMua.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtpNgayMua.Margin = new System.Windows.Forms.Padding(5);
             this.dtpNgayMua.Name = "dtpNgayMua";
-            this.dtpNgayMua.Size = new System.Drawing.Size(133, 28);
+            this.dtpNgayMua.Size = new System.Drawing.Size(133, 24);
             this.dtpNgayMua.TabIndex = 8;
             // 
             // lbNgayMua
@@ -100,7 +100,7 @@
             this.lbNgayMua.Location = new System.Drawing.Point(501, 58);
             this.lbNgayMua.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbNgayMua.Name = "lbNgayMua";
-            this.lbNgayMua.Size = new System.Drawing.Size(87, 21);
+            this.lbNgayMua.Size = new System.Drawing.Size(71, 17);
             this.lbNgayMua.TabIndex = 3;
             this.lbNgayMua.Text = "Ngày Mua";
             // 
@@ -110,16 +110,16 @@
             this.lbMaKH.Location = new System.Drawing.Point(28, 104);
             this.lbMaKH.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbMaKH.Name = "lbMaKH";
-            this.lbMaKH.Size = new System.Drawing.Size(131, 21);
+            this.lbMaKH.Size = new System.Drawing.Size(107, 17);
             this.lbMaKH.TabIndex = 4;
             this.lbMaKH.Text = "Mã Khách Hàng";
             // 
             // txtMaPhieu
             // 
             this.txtMaPhieu.Location = new System.Drawing.Point(229, 51);
-            this.txtMaPhieu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMaPhieu.Margin = new System.Windows.Forms.Padding(5);
             this.txtMaPhieu.Name = "txtMaPhieu";
-            this.txtMaPhieu.Size = new System.Drawing.Size(213, 28);
+            this.txtMaPhieu.Size = new System.Drawing.Size(213, 24);
             this.txtMaPhieu.TabIndex = 7;
             // 
             // lbMaPhieu
@@ -128,7 +128,7 @@
             this.lbMaPhieu.Location = new System.Drawing.Point(28, 58);
             this.lbMaPhieu.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbMaPhieu.Name = "lbMaPhieu";
-            this.lbMaPhieu.Size = new System.Drawing.Size(80, 21);
+            this.lbMaPhieu.Size = new System.Drawing.Size(65, 17);
             this.lbMaPhieu.TabIndex = 5;
             this.lbMaPhieu.Text = "Mã Phiếu";
             // 
@@ -138,10 +138,10 @@
             this.groupBox2.Controls.Add(this.panel1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 218);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(873, 421);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(875, 430);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi Tiết Phiếu Mua ";
@@ -156,11 +156,11 @@
             this.DonGia,
             this.ThanhTien});
             this.dgvChiTietPhieuMua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvChiTietPhieuMua.Location = new System.Drawing.Point(4, 25);
-            this.dgvChiTietPhieuMua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvChiTietPhieuMua.Location = new System.Drawing.Point(4, 21);
+            this.dgvChiTietPhieuMua.Margin = new System.Windows.Forms.Padding(4);
             this.dgvChiTietPhieuMua.Name = "dgvChiTietPhieuMua";
             this.dgvChiTietPhieuMua.RowTemplate.Height = 24;
-            this.dgvChiTietPhieuMua.Size = new System.Drawing.Size(865, 306);
+            this.dgvChiTietPhieuMua.Size = new System.Drawing.Size(867, 319);
             this.dgvChiTietPhieuMua.TabIndex = 1;
             this.dgvChiTietPhieuMua.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietPhieuMua_CellClick);
             this.dgvChiTietPhieuMua.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietPhieuMua_CellValueChanged);
@@ -207,10 +207,10 @@
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(4, 331);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(4, 340);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(865, 86);
+            this.panel1.Size = new System.Drawing.Size(867, 86);
             this.panel1.TabIndex = 0;
             // 
             // btnInPhieu
@@ -220,7 +220,7 @@
             this.btnInPhieu.Image = ((System.Drawing.Image)(resources.GetObject("btnInPhieu.Image")));
             this.btnInPhieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInPhieu.Location = new System.Drawing.Point(613, 27);
-            this.btnInPhieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInPhieu.Margin = new System.Windows.Forms.Padding(4);
             this.btnInPhieu.Name = "btnInPhieu";
             this.btnInPhieu.Size = new System.Drawing.Size(100, 50);
             this.btnInPhieu.TabIndex = 20;
@@ -235,7 +235,7 @@
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnThoat.Location = new System.Drawing.Point(755, 27);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(5);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(76, 50);
             this.btnThoat.TabIndex = 19;
@@ -252,7 +252,7 @@
             this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnHuy.Location = new System.Drawing.Point(501, 26);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(5);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(70, 50);
             this.btnHuy.TabIndex = 18;
@@ -269,7 +269,7 @@
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLuu.Location = new System.Drawing.Point(373, 26);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(5);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(76, 50);
             this.btnLuu.TabIndex = 17;
@@ -285,7 +285,7 @@
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnXoa.Location = new System.Drawing.Point(257, 26);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(5);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(69, 50);
             this.btnXoa.TabIndex = 16;
@@ -301,7 +301,7 @@
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSua.Location = new System.Drawing.Point(145, 26);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(70, 50);
             this.btnSua.TabIndex = 15;
@@ -317,7 +317,7 @@
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnThem.Location = new System.Drawing.Point(39, 23);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(5);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(76, 50);
             this.btnThem.TabIndex = 14;
@@ -328,17 +328,18 @@
             // 
             // frmPhieuMuaDichVu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 639);
+            this.ClientSize = new System.Drawing.Size(875, 648);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(891, 686);
             this.MinimumSize = new System.Drawing.Size(891, 686);
             this.Name = "frmPhieuMuaDichVu";
             this.Text = "Mua Dịch Vụ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPhieuMuaDichVu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -46,6 +46,11 @@
             this.txtMaTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvThietBi = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.cmbTimKiem = new System.Windows.Forms.ComboBox();
@@ -53,11 +58,6 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThietBi)).BeginInit();
@@ -287,6 +287,40 @@
             this.dgvThietBi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThietBi_CellClick);
             this.dgvThietBi.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvThietBi_RowPrePaint);
             // 
+            // STT
+            // 
+            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
+            // MaTB
+            // 
+            this.MaTB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaTB.DataPropertyName = "Ma_TB";
+            this.MaTB.HeaderText = "Mã Thiết Bị";
+            this.MaTB.Name = "MaTB";
+            // 
+            // TenTB
+            // 
+            this.TenTB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenTB.DataPropertyName = "Ten_TB";
+            this.TenTB.HeaderText = "Tên Thiết Bị";
+            this.TenTB.Name = "TenTB";
+            // 
+            // NgayBD
+            // 
+            this.NgayBD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayBD.DataPropertyName = "Ngay_BD";
+            this.NgayBD.HeaderText = "Ngày Bảo Dưỡng";
+            this.NgayBD.Name = "NgayBD";
+            // 
+            // TenTC
+            // 
+            this.TenTC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenTC.DataPropertyName = "Ten_TroChoi";
+            this.TenTC.HeaderText = "Tên Trò Chơi";
+            this.TenTC.Name = "TenTC";
+            // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -376,40 +410,6 @@
             this.label5.TabIndex = 49;
             this.label5.Text = "Quản Lý Thiết Bị   ";
             // 
-            // STT
-            // 
-            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            // 
-            // MaTB
-            // 
-            this.MaTB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaTB.DataPropertyName = "Ma_TB";
-            this.MaTB.HeaderText = "Mã Thiết Bị";
-            this.MaTB.Name = "MaTB";
-            // 
-            // TenTB
-            // 
-            this.TenTB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenTB.DataPropertyName = "Ten_TB";
-            this.TenTB.HeaderText = "Tên Thiết Bị";
-            this.TenTB.Name = "TenTB";
-            // 
-            // NgayBD
-            // 
-            this.NgayBD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgayBD.DataPropertyName = "Ngay_BD";
-            this.NgayBD.HeaderText = "Ngày Bảo Dưỡng";
-            this.NgayBD.Name = "NgayBD";
-            // 
-            // TenTC
-            // 
-            this.TenTC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenTC.DataPropertyName = "Ten_TroChoi";
-            this.TenTC.HeaderText = "Tên Trò Chơi";
-            this.TenTC.Name = "TenTC";
-            // 
             // frmThietbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
@@ -429,6 +429,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmThietbi";
             this.Text = "frmThietbi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmThietbi_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

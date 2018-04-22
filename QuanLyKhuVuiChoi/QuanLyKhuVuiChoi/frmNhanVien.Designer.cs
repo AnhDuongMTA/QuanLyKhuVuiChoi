@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
             this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txtLuong = new System.Windows.Forms.TextBox();
             this.txtMaKhu = new System.Windows.Forms.TextBox();
@@ -62,7 +63,6 @@
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.cbTimKiem = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -90,6 +90,18 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập Thông Tin Nhân Viên";
+            // 
+            // cmbGioiTinh
+            // 
+            this.cmbGioiTinh.FormattingEnabled = true;
+            this.cmbGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cmbGioiTinh.Location = new System.Drawing.Point(537, 24);
+            this.cmbGioiTinh.Name = "cmbGioiTinh";
+            this.cmbGioiTinh.Size = new System.Drawing.Size(200, 25);
+            this.cmbGioiTinh.TabIndex = 31;
+            this.cmbGioiTinh.Text = "Nam";
             // 
             // dateNgaySinh
             // 
@@ -436,18 +448,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tìm Kiếm:";
             // 
-            // cmbGioiTinh
-            // 
-            this.cmbGioiTinh.FormattingEnabled = true;
-            this.cmbGioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cmbGioiTinh.Location = new System.Drawing.Point(537, 24);
-            this.cmbGioiTinh.Name = "cmbGioiTinh";
-            this.cmbGioiTinh.Size = new System.Drawing.Size(200, 25);
-            this.cmbGioiTinh.TabIndex = 31;
-            this.cmbGioiTinh.Text = "Nam";
-            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -464,6 +464,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmNhanVien";
             this.Text = "frmNhanVien";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

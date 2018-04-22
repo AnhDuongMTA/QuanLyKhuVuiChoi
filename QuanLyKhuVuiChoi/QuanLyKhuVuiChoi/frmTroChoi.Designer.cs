@@ -416,6 +416,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTroChoi";
             this.Text = "frmTroChoi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTroChoi_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ChiTietPhieuMuaDAL.cs" />
     <Compile Include="DichVuDAL.cs" />
+    <Compile Include="HomeDAL.cs" />
     <Compile Include="KetNoi.cs" />
     <Compile Include="KhachHangDAL.cs" />
     <Compile Include="KhuVucDAL.cs" />
