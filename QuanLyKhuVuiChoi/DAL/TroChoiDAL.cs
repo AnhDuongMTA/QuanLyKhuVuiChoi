@@ -52,7 +52,7 @@ namespace DAL
 
         public DataTable GetListKhuVuc()
         {
-            return conn.GetData("KhuVuc_Select", null);
+            return conn.GetData("KhuVuc_SelectAll", null);
         }
         public DataTable GetDataTTTB(String ID)
         {

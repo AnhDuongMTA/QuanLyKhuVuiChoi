@@ -15,5 +15,7 @@ namespace Entity
         public int TongTien { get; set; }
         public int SoVeNL { get; set; }
         public int SoVeTE { get; set; }
+        public int GiaVeNL { get; set; }
+        public int GiaVeTE { get; set; }
     }
 }

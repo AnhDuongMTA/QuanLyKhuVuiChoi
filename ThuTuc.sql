@@ -56,19 +56,20 @@ BEGIN
 	SELECT * FROM dbo.TroChoi
 END
 GO
-CREATE PROC KhuVuc_SelectAll
+ALTER PROC KhuVuc_SelectAll
 AS
 BEGIN
 	SELECT * FROM dbo.KhuVuc
 END
 GO 
-CREATE PROC VeChoi_SelectAll
+ALTER PROC VeChoi_SelectAll
 AS
 BEGIN
-	SELECT * FROM dbo.VeChoi
+	SELECT Ma_Ve,Ten_Khu,Ten_KH ,So_VeNL,So_VeTE,Tong_Tien FROM dbo.VeChoi,dbo.KhachHang,dbo.KhuVuc
+	WHERE KhachHang.Ma_KH = VeChoi.Ma_KH AND KhuVuc.Ma_Khu= VeChoi.Ma_Khu
 END
 GO 
-CREATE PROC Them_VeChoi (@MaVe varchar(10),@MaKH VARCHAR(10),@TongTien int ,@MaKhu VARCHAR(10),@SoVeNL INT,@SoVeTE INT,@NgayBan DATE) 
+CREATE PROC Them_VeChoi (@MaVe varchar(10),@MaKH VARCHAR(10),@TongTien int ,@MaKhu VARCHAR(10),@SoVeNL INT,@SoVeTE INT,@NgayBan DATE,@GiaVeNL INT,@GiaVeTE INT) 
 AS
 BEGIN
 	INSERT INTO dbo.VeChoi
@@ -78,9 +79,11 @@ BEGIN
 	          Ngay_Ban ,
 	          Tong_Tien ,
 	          Ma_KH ,
-	          Ma_Khu
+	          Ma_Khu,
+			  GiaVeNL,
+			  GiaVeTE
 	        )
-	VALUES  (@MaVe,@SoVeNL,@SoVeTE,@NgayBan,@TongTien,@MaKH,@MaKhu)
+	VALUES  (@MaVe,@SoVeNL,@SoVeTE,@NgayBan,@SoVeNL*@GiaVeNL+ @SoVeTE*@GiaVeTE,@MaKH,@MaKhu)
 END
 GO 
 CREATE PROC Sua_VeChoi (@MaVe varchar(10),@MaKH VARCHAR(10),@TongTien int ,@MaKhu VARCHAR(10),@SoVeNL INT,@SoVeTE INT,@NgayBan DATE) 
@@ -101,3 +104,31 @@ AS
 BEGIN
 	SELECT * FROM dbo.TroChoi
 END
+GO 
+CREATE PROC KhuVuc_Select
+AS
+BEGIN
+	SELECT * FROM dbo.KhuVuc WHERE Gia_NL > 0 OR Gia_TE > 0
+END
+GO 
+ALTER PROC KhuVuc_SelectNV (@MaKhu varchar(10))
+AS
+BEGIN
+	SELECT Ma_NV,Ten_NV,Ten_Khu,Gioi_Tinh,DiaChi,Luong FROM dbo.NhanVien,dbo.KhuVuc
+	 WHERE KhuVuc.Ma_Khu= NhanVien.Ma_Khu and dbo.NhanVien.Ma_Khu = @MaKhu
+END
+go
+ALTER PROC KhuVuc_SelectTC (@MaKhu varchar(10))
+AS
+BEGIN
+	SELECT Ma_TroChoi,Ten_TroChoi,Ten_Khu FROM dbo.TroChoi,dbo.KhuVuc
+	 WHERE KhuVuc.Ma_Khu= dbo.TroChoi.Ma_Khu and dbo.TroChoi.Ma_Khu = @MaKhu
+END
+go
+ALTER PROC KhuVuc_SelectDV (@MaKhu varchar(10))
+AS
+BEGIN
+	SELECT Ma_DV,Ten_DV,Ten_Khu,Gia_DV FROM dbo.DichVu,dbo.KhuVuc
+	 WHERE DichVu.Ma_Khu= KhuVuc.Ma_Khu AND dbo.DichVu.Ma_Khu = @MaKhu
+END
+go

@@ -45,11 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTroChoi = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKhu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTimKiem = new System.Windows.Forms.ComboBox();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -58,6 +53,10 @@
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnTTTB = new System.Windows.Forms.Button();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKhu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -256,8 +255,7 @@
             this.STT,
             this.MaTC,
             this.TenTC,
-            this.TenKhu,
-            this.SoLuongTB});
+            this.TenKhu});
             this.dgvTroChoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTroChoi.Location = new System.Drawing.Point(3, 21);
             this.dgvTroChoi.Name = "dgvTroChoi";
@@ -265,40 +263,6 @@
             this.dgvTroChoi.TabIndex = 0;
             this.dgvTroChoi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTroChoi_CellClick);
             this.dgvTroChoi.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvTroChoi_RowPrePaint);
-            // 
-            // STT
-            // 
-            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            // 
-            // MaTC
-            // 
-            this.MaTC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaTC.DataPropertyName = "Ma_TroChoi";
-            this.MaTC.HeaderText = "Mã Trò Chơi";
-            this.MaTC.Name = "MaTC";
-            // 
-            // TenTC
-            // 
-            this.TenTC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenTC.DataPropertyName = "Ten_TroChoi";
-            this.TenTC.HeaderText = "Tên Trò Chơi";
-            this.TenTC.Name = "TenTC";
-            // 
-            // TenKhu
-            // 
-            this.TenKhu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenKhu.DataPropertyName = "Ten_Khu";
-            this.TenKhu.HeaderText = "Tên Khu Vực";
-            this.TenKhu.Name = "TenKhu";
-            // 
-            // SoLuongTB
-            // 
-            this.SoLuongTB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SoLuongTB.DataPropertyName = "SoLuongTB";
-            this.SoLuongTB.HeaderText = "Số Lượng TB";
-            this.SoLuongTB.Name = "SoLuongTB";
             // 
             // label1
             // 
@@ -396,6 +360,33 @@
             this.btnTTTB.UseVisualStyleBackColor = true;
             this.btnTTTB.Click += new System.EventHandler(this.btnTTTB_Click);
             // 
+            // STT
+            // 
+            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
+            // MaTC
+            // 
+            this.MaTC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaTC.DataPropertyName = "Ma_TroChoi";
+            this.MaTC.HeaderText = "Mã Trò Chơi";
+            this.MaTC.Name = "MaTC";
+            // 
+            // TenTC
+            // 
+            this.TenTC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenTC.DataPropertyName = "Ten_TroChoi";
+            this.TenTC.HeaderText = "Tên Trò Chơi";
+            this.TenTC.Name = "TenTC";
+            // 
+            // TenKhu
+            // 
+            this.TenKhu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenKhu.DataPropertyName = "Ten_Khu";
+            this.TenKhu.HeaderText = "Tên Khu Vực";
+            this.TenKhu.Name = "TenKhu";
+            // 
             // frmTroChoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
@@ -459,6 +450,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaTC;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenTC;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKhu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTB;
     }
 }

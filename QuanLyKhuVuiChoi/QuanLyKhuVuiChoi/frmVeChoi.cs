@@ -16,6 +16,7 @@ namespace QuanLyKhuVuiChoi
     {
         VeChoiBus Bus = new VeChoiBus();
         VeChoiEntity Ve = new VeChoiEntity();
+        public static string Ma;
         private int fluu = 1;
         public frmVeChoi()
         {
@@ -31,7 +32,6 @@ namespace QuanLyKhuVuiChoi
             txtMaVe.Enabled = e;
             cmbMaKH.Enabled = e;
             cmbMaKhu.Enabled = e;
-            txtTongTien.Enabled = e;
             txtVeNL.Enabled = e;
             txtVeTE.Enabled = e;
             dpNgayBan.Enabled = e;
@@ -46,13 +46,32 @@ namespace QuanLyKhuVuiChoi
             cmbMaKhu.Text = "";
             dpNgayBan.Text = "";
         }
+        public void ShowKhachHang()
+        {
+            DataTable dt = new DataTable();
+            dt = Bus.GetListKhachHang();
+            cmbMaKH.DataSource = dt;
+            cmbMaKH.DisplayMember = "Ten_KH";
+            cmbMaKH.ValueMember = "Ma_KH";
+        }
+        public void ShowKhuVuc()
+        {
+            DataTable dt = new DataTable();
+            dt = Bus.GetListKhuVuc();
+            cmbMaKhu.DataSource = dt;
+            cmbMaKhu.DisplayMember = "Ten_Khu";
+            cmbMaKhu.ValueMember = "Ma_Khu";
+        }
         private void HienThi()
         {
             dgvVeChoi.DataSource = Bus.GetData();
         }
         private void frmVeChoi_Load(object sender, EventArgs e)
         {
-
+            HienThi();
+            DisEnl(false);
+            ShowKhachHang();
+            ShowKhuVuc();
         }
 
         private void dgvVeChoi_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -65,9 +84,11 @@ namespace QuanLyKhuVuiChoi
                     txtTongTien.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["TongTien"].Value);
                     txtVeNL.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["SoVeNL"].Value);
                     txtVeTE.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["SoVeTE"].Value);
-                    cmbMaKhu.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["MaKhu"].Value);
-                    cmbMaKH.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["MaKH"].Value);
+                    cmbMaKhu.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["TenKhu"].Value);
+                    cmbMaKH.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["TenKH"].Value);
                     dpNgayBan.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["NgayBan"].Value);
+                    txtGiaNL.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["GiaNL"].Value);
+                    txtGiaTE.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["GiaTE"].Value);
                 }
                 else
                 {
@@ -75,9 +96,11 @@ namespace QuanLyKhuVuiChoi
                     txtTongTien.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["TongTien"].Value);
                     txtVeNL.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["SoVeNL"].Value);
                     txtVeTE.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["SoVeTE"].Value);
-                    cmbMaKhu.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["MaKhu"].Value);
-                    cmbMaKH.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["MaKH"].Value);
+                    cmbMaKhu.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["TenKhu"].Value);
+                    cmbMaKH.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["TenKH"].Value);
                     dpNgayBan.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["NgayBan"].Value);
+                    txtGiaNL.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["GiaNL"].Value);
+                    txtGiaTE.Text = Convert.ToString(dgvVeChoi.CurrentRow.Cells["GiaTE"].Value);
                 }
             }
         }
@@ -114,21 +137,24 @@ namespace QuanLyKhuVuiChoi
                     DisEnl(false);
                     HienThi();
                 }
-                catch (Exception ex)
+                catch
                 {
-                    MessageBox.Show("Có Lỗi Không thể xóa !");
+
                 }
             }
+                frmVeChoi_Load(sender, e);
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
             Ve.MaVe = txtMaVe.Text;
-             Ve.MaKhu = cmbMaKhu.Text;
-            Ve.MaKH = cmbMaKH.Text;
-            Ve.TongTien = Convert.ToInt32(txtTongTien.Text);
-            Ve.SoVeNL = Convert.ToInt32(txtVeNL.Text);
-            Ve.SoVeTE = Convert.ToInt32(txtVeTE.Text);
+            Ve.MaKhu = cmbMaKhu.SelectedValue.ToString();
+            Ve.MaKH = cmbMaKH.SelectedValue.ToString();
+            //Ve.TongTien = int.Parse(txtTongTien.Text.ToString());
+            Ve.SoVeNL = int.Parse(txtVeNL.Text.ToString());
+            Ve.SoVeTE = int.Parse(txtVeTE.Text.ToString());
+            Ve.GiaVeNL = int.Parse(txtGiaNL.Text.ToString());
+            Ve.GiaVeTE = int.Parse(txtGiaTE.Text.ToString());
             Ve.NgayBan = dpNgayBan.Text;
             if (fluu == 0)
             {
@@ -139,7 +165,7 @@ namespace QuanLyKhuVuiChoi
                     HienThi();
                     clearData();
                     DisEnl(false);
-                    //fluu = 1;
+                    fluu = 1;
                 }
                 catch
                 {
@@ -161,6 +187,7 @@ namespace QuanLyKhuVuiChoi
 
                 }
             }
+            frmVeChoi_Load(sender, e);
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -188,6 +215,53 @@ namespace QuanLyKhuVuiChoi
             }
             else
                 HienThi();
+        }
+
+        private void cmbMaKhu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataRowView d = (DataRowView)cmbMaKhu.SelectedItem;
+
+            txtGiaNL.Text = d.Row["Gia_NL"].ToString();
+            txtGiaTE.Text = d.Row["Gia_TE"].ToString();
+        }
+
+        private void txtVeTE_TextChanged(object sender, EventArgs e)
+        {
+            if (txtVeNL.Text != null && txtVeTE.Text != null)
+            {
+                txtTongTien.Text = ((int.Parse(txtGiaNL.Text) * int.Parse(txtVeNL.Text)) + (int.Parse(txtGiaTE.Text) * int.Parse(txtVeTE.Text))).ToString();
+            }
+            else
+            {
+                txtVeNL.Text = "0";
+                txtVeTE.Text = "0";
+            }
+        }
+        private void txtVeNL_TextChanged(object sender, EventArgs e)
+        {
+            if (txtVeNL.Text != null && txtVeTE.Text != null)
+            {
+                txtTongTien.Text = ((int.Parse(txtGiaNL.Text) * int.Parse(txtVeNL.Text)) + (int.Parse(txtGiaTE.Text) * int.Parse(txtVeTE.Text))).ToString();
+            }
+            else
+            {
+                txtVeNL.Text = "0";
+                txtVeTE.Text = "0";
+            }
+        }
+
+        private void btnInVe_Click(object sender, EventArgs e)
+        {
+            if(txtMaVe.Text != null)
+            {
+                Ma = txtMaVe.Text;
+                frmInVeChoi frmIn = new frmInVeChoi();
+                frmIn.Show();
+            }
+            else
+            {
+                MessageBox.Show("Yêu Cầu Nhập Đầy Đủ Thông Tin");
+            }
         }
     }
 }

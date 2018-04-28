@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +67,12 @@
     </Compile>
     <Compile Include="frmDichVu.Designer.cs">
       <DependentUpon>frmDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInVeChoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInVeChoi.Designer.cs">
+      <DependentUpon>frmInVeChoi.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
@@ -150,6 +160,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLKVC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLKVC.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmDangKi.resx">
       <DependentUpon>frmDangKi.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDichVu.resx">
       <DependentUpon>frmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInVeChoi.resx">
+      <DependentUpon>frmInVeChoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
@@ -201,6 +219,7 @@
     <EmbeddedResource Include="frmXemTroChoiThuocKhuVuc.resx">
       <DependentUpon>frmXemTroChoiThuocKhuVuc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InVe.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -235,6 +254,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLKVC.xsc">
+      <DependentUpon>QLKVC.xsd</DependentUpon>
+    </None>
+    <None Include="QLKVC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLKVC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QLKVC.xss">
+      <DependentUpon>QLKVC.xsd</DependentUpon>
+    </None>
     <None Include="Resources\login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
